@@ -124,9 +124,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #allowed specific origins
 CORS_ALLOWED_ORIGINS = [
-     "http://localhost:5173",  # Remove trailing slash
+     "http://localhost:5173",  
     "http://127.0.0.1:8000",
-      
+    "https://frontendrepo-iikg.vercel.app",  # Added frontend URL here
      # React frontend URL
     
 ]
@@ -140,6 +140,8 @@ CORS_ALLOW_METHODS = [
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 ALLOWED_HOSTS = ['*']
 
